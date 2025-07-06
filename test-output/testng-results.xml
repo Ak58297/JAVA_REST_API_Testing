@@ -2,60 +2,24 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-19T09:53:09 IST" name="Default suite" finished-at="2025-06-19T09:53:12 IST" duration-ms="2823">
+  <suite started-at="2025-07-06T14:53:55 IST" name="Default suite" finished-at="2025-07-06T14:54:02 IST" duration-ms="6492">
     <groups>
     </groups>
-    <test started-at="2025-06-19T09:53:09 IST" name="Default test" finished-at="2025-06-19T09:53:12 IST" duration-ms="2823">
-      <class name="API_Testing.RestAssured.Dynamic">
-        <test-method signature="AddBook(java.lang.String,java.lang.String)[pri:0, instance:API_Testing.RestAssured.Dynamic@74f0ea28]" started-at="2025-06-19T09:53:09 IST" name="AddBook" data-provider="GetNewJsonDAta" finished-at="2025-06-19T09:53:11 IST" duration-ms="2197" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sagf45]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123xfdgds]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-07-06T14:53:55 IST" name="Default test" finished-at="2025-07-06T14:54:02 IST" duration-ms="6492">
+      <class name="API_Testing.RestAssured.SpecBuilder">
+        <test-method signature="addpojo()[pri:0, instance:API_Testing.RestAssured.SpecBuilder@1bb5a082]" started-at="2025-07-06T14:53:55 IST" name="addpojo" finished-at="2025-07-06T14:53:58 IST" duration-ms="2233" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddBook -->
-        <test-method signature="AddBook(java.lang.String,java.lang.String)[pri:0, instance:API_Testing.RestAssured.Dynamic@74f0ea28]" started-at="2025-06-19T09:53:11 IST" name="AddBook" data-provider="GetNewJsonDAta" finished-at="2025-06-19T09:53:11 IST" duration-ms="391" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[212321]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[64yrthdsf]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- addpojo -->
+        <test-method signature="getData()[pri:1, instance:API_Testing.RestAssured.SpecBuilder@1bb5a082]" started-at="2025-07-06T14:53:58 IST" name="getData" finished-at="2025-07-06T14:53:59 IST" duration-ms="1773" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddBook -->
-        <test-method signature="AddBook(java.lang.String,java.lang.String)[pri:0, instance:API_Testing.RestAssured.Dynamic@74f0ea28]" started-at="2025-06-19T09:53:11 IST" name="AddBook" data-provider="GetNewJsonDAta" finished-at="2025-06-19T09:53:12 IST" duration-ms="186" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[123w2dgf]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[9834t7iehdf]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- getData -->
+        <test-method signature="updatedata()[pri:2, instance:API_Testing.RestAssured.SpecBuilder@1bb5a082]" started-at="2025-07-06T14:53:59 IST" name="updatedata" finished-at="2025-07-06T14:54:02 IST" depends-on-methods="API_Testing.RestAssured.SpecBuilder.addpojo" duration-ms="2432" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddBook -->
-      </class> <!-- API_Testing.RestAssured.Dynamic -->
+        </test-method> <!-- updatedata -->
+      </class> <!-- API_Testing.RestAssured.SpecBuilder -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

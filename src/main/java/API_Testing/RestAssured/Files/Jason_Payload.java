@@ -86,5 +86,15 @@ public class Jason_Payload {
 	}
 	
 	
+	public static String UpdateAddress(String PlaceID)
+	{
+		return "{\r\n"
+				+ "\"place_id\":\""+PlaceID+"\",\r\n"
+				+ "\"address\":\"70 walk Jharkhand,=> this is a updated address\",\r\n"
+				+ "\"name\":\"Banglore\",\r\n"
+				+ "\"key\":\"qaclick123\"\r\n"
+				+ "}";
+	}
+	
 
 }

@@ -24,7 +24,7 @@ public class Basics {
 		String response = 
 				//given().log().all()
 				given()
-				.queryParam("key", " qaclick123").header("Content-Type","application/json").body(Jason_Payload.AddPayload())
+				.queryParam("key", " qaclick123").header("Content-Type","application/json").log().all().body(Jason_Payload.CoursePayload())
 				
 				.when().post("maps/api/place/add/json")
 				

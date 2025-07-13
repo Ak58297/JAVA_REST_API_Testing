@@ -73,7 +73,6 @@ public class SpecBuilder {
 		jp=new JsonPath(response);
 		PlaceID=jp.getString("place_id");
 		System.out.println("Place ID is "+PlaceID);
-		
 		}
 	
 	@Test(priority=1)

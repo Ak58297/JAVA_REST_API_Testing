@@ -6,8 +6,6 @@ import java.util.List;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import API_Testing.RestAssured.Files.Jason_Payload;
-import Pojo.Get_PojoClasses.getResponse;
 import Pojo.Post.getdetails;
 import Pojo.Post.locations;
 import Pojo.Update_PojoClasses.Update_Address;
@@ -15,7 +13,6 @@ import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
-import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 import static io.restassured.RestAssured.*;
@@ -72,7 +69,6 @@ public class SpecBuilder {
 		jp=new JsonPath(response);
 		PlaceID=jp.getString("place_id");
 		System.out.println("Place ID is "+PlaceID);
-		
 		}
 	
 	@Test(priority=1)
@@ -107,7 +103,7 @@ public class SpecBuilder {
 		String Rmsg=jp.getString("msg");
 		System.out.println("=============================================="+Rmsg);
 		Assert.assertEquals("Address successfully updated", Rmsg);
-		
+	
 		
 	}
 //	

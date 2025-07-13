@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-06T14:53:55 IST" name="Default suite" finished-at="2025-07-06T14:54:02 IST" duration-ms="6492">
+  <suite started-at="2025-07-13T10:38:52 IST" name="Default suite" finished-at="2025-07-13T10:39:00 IST" duration-ms="8442">
     <groups>
     </groups>
-    <test started-at="2025-07-06T14:53:55 IST" name="Default test" finished-at="2025-07-06T14:54:02 IST" duration-ms="6492">
+    <test started-at="2025-07-13T10:38:52 IST" name="Default test" finished-at="2025-07-13T10:39:00 IST" duration-ms="8442">
       <class name="API_Testing.RestAssured.SpecBuilder">
-        <test-method signature="addpojo()[pri:0, instance:API_Testing.RestAssured.SpecBuilder@1bb5a082]" started-at="2025-07-06T14:53:55 IST" name="addpojo" finished-at="2025-07-06T14:53:58 IST" duration-ms="2233" status="PASS">
+        <test-method signature="addpojo()[pri:0, instance:API_Testing.RestAssured.SpecBuilder@1bb5a082]" started-at="2025-07-13T10:38:52 IST" name="addpojo" finished-at="2025-07-13T10:38:56 IST" duration-ms="3460" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addpojo -->
-        <test-method signature="getData()[pri:1, instance:API_Testing.RestAssured.SpecBuilder@1bb5a082]" started-at="2025-07-06T14:53:58 IST" name="getData" finished-at="2025-07-06T14:53:59 IST" duration-ms="1773" status="PASS">
+        <test-method signature="getData()[pri:1, instance:API_Testing.RestAssured.SpecBuilder@1bb5a082]" started-at="2025-07-13T10:38:56 IST" name="getData" finished-at="2025-07-13T10:38:58 IST" duration-ms="2075" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getData -->
-        <test-method signature="updatedata()[pri:2, instance:API_Testing.RestAssured.SpecBuilder@1bb5a082]" started-at="2025-07-06T14:53:59 IST" name="updatedata" finished-at="2025-07-06T14:54:02 IST" depends-on-methods="API_Testing.RestAssured.SpecBuilder.addpojo" duration-ms="2432" status="PASS">
+        <test-method signature="updatedata()[pri:2, instance:API_Testing.RestAssured.SpecBuilder@1bb5a082]" started-at="2025-07-13T10:38:58 IST" name="updatedata" finished-at="2025-07-13T10:39:00 IST" depends-on-methods="API_Testing.RestAssured.SpecBuilder.addpojo" duration-ms="2859" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updatedata -->

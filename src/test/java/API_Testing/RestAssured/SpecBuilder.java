@@ -36,8 +36,7 @@ public class SpecBuilder {
 		
 		locations lo=new locations();
 		lo.setLng(38.383494);
-		lo.setLat(-38.383494);
-		
+		lo.setLat(-38.383494);	
 		gd.setLocation(lo);
 		gd.setAccuracy(20);
 		gd.setName("abhishek");
@@ -66,7 +65,7 @@ public class SpecBuilder {
 		
 		String response=
 				given().spec(specobjt)
-				.body(gd)
+				.body(gd)                  //here we are doing serialization as converting java object ot json string and passing it in post
 				.when().post("maps/api/place/add/json")
 				.then().statusCode(200).extract().response().asString();
 		System.out.println("<------------------->"+response);

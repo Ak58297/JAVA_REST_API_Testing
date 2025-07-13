@@ -85,10 +85,8 @@ public class Basics {
 		given().log().all().queryParam("key", "qaclick123").body("{\r\n"
 				+ "    \"place_id\":\""+PlaceID1+"\"\r\n"
 				+ "}\r\n"
-				+ "")
-		
+				+ "")	
 		.when().get("maps/api/place/delete/json")
-		
 		.then().log().all().assertThat().statusCode(200).extract().response().asString();
 		
 		System.out.println("Delete response is : "+DelelteResponse);

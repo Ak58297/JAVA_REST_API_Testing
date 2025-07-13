@@ -6,8 +6,6 @@ import java.util.List;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import API_Testing.RestAssured.Files.Jason_Payload;
-import Pojo.Get_PojoClasses.getResponse;
 import Pojo.Post.getdetails;
 import Pojo.Post.locations;
 import Pojo.Update_PojoClasses.Update_Address;
@@ -15,7 +13,6 @@ import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
-import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 import static io.restassured.RestAssured.*;
@@ -36,8 +33,7 @@ public class SpecBuilder {
 		
 		locations lo=new locations();
 		lo.setLng(38.383494);
-		lo.setLat(-38.383494);
-		
+		lo.setLat(-38.383494);	
 		gd.setLocation(lo);
 		gd.setAccuracy(20);
 		gd.setName("abhishek");
@@ -66,7 +62,7 @@ public class SpecBuilder {
 		
 		String response=
 				given().spec(specobjt)
-				.body(gd)
+				.body(gd)                  //here we are doing serialization as converting java object ot json string and passing it in post
 				.when().post("maps/api/place/add/json")
 				.then().statusCode(200).extract().response().asString();
 		System.out.println("<------------------->"+response);
@@ -107,7 +103,7 @@ public class SpecBuilder {
 		String Rmsg=jp.getString("msg");
 		System.out.println("=============================================="+Rmsg);
 		Assert.assertEquals("Address successfully updated", Rmsg);
-		
+	
 		
 	}
 //	
